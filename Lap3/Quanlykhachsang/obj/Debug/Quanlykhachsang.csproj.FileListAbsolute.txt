@@ -1,0 +1,12 @@
+E:\oop\Quanlykhachsang\obj\Debug\Quanlykhachsang.csproj.AssemblyReference.cache
+E:\oop\Quanlykhachsang\obj\Debug\Quanlykhachsang.Form1.resources
+E:\oop\Quanlykhachsang\obj\Debug\Quanlykhachsang.Properties.Resources.resources
+E:\oop\Quanlykhachsang\obj\Debug\Quanlykhachsang.csproj.GenerateResource.cache
+E:\oop\Quanlykhachsang\obj\Debug\Quanlykhachsang.csproj.CoreCompileInputs.cache
+E:\oop\Quanlykhachsang\bin\Debug\Quanlykhachsang.exe.config
+E:\oop\Quanlykhachsang\bin\Debug\Quanlykhachsang.exe
+E:\oop\Quanlykhachsang\bin\Debug\Quanlykhachsang.pdb
+E:\oop\Quanlykhachsang\obj\Debug\Quanlykhachsang.Forms.FrmDanhMuc.resources
+E:\oop\Quanlykhachsang\obj\Debug\Quanlykhachsang.Forms.FrmMain.resources
+E:\oop\Quanlykhachsang\obj\Debug\Quanlykhachsang.exe
+E:\oop\Quanlykhachsang\obj\Debug\Quanlykhachsang.pdb
