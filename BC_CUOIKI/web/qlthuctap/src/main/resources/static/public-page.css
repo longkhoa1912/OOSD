@@ -1,0 +1,258 @@
+/* Public landing page and login dialog. */
+.public-page {
+  min-height: 100vh;
+  background: #fff;
+  color: #10213f;
+}
+
+.public-topline {
+  min-height: 52px;
+  padding: 14px 20px;
+  background: #5b9bd5;
+  color: #fff;
+  font-size: 17px;
+}
+
+.public-nav {
+  min-height: 94px;
+  padding: 15px 4%;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  border: 1px solid #5b9bd5;
+  background: #fff;
+}
+
+.public-brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #10213f;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.public-brand > span:first-child {
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.public-brand-name {
+  border-bottom: 4px solid #ef7c32;
+  padding-bottom: 4px;
+  line-height: 1.25;
+}
+
+.news-link {
+  margin-left: auto;
+  color: #10213f;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.public-login-button {
+  min-width: 183px;
+  border: 0;
+  border-radius: 9px;
+  padding: 14px 24px;
+  background: #5b9bd5;
+  color: #fff;
+  font-size: 19px;
+  cursor: pointer;
+}
+
+.public-login-button:hover {
+  background: #347dbd;
+}
+
+.landing-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.12fr);
+  gap: clamp(30px, 5vw, 80px);
+  align-items: center;
+  padding: 40px clamp(28px, 4vw, 78px) 34px;
+}
+
+.landing-intro {
+  min-width: 0;
+}
+
+.hero-label {
+  display: inline-block;
+  margin-bottom: 10px;
+  border-radius: 9px;
+  padding: 11px 14px;
+  background: #5b9bd5;
+  color: #fff;
+  font-size: 18px;
+}
+
+.landing-intro h1 {
+  margin: 0 0 12px;
+  color: #5b9bd5;
+  font-size: clamp(22px, 2vw, 30px);
+  line-height: 1.3;
+}
+
+.landing-intro p {
+  margin: 10px 0 16px;
+  line-height: 1.65;
+}
+
+.illustration-placeholders {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 22px;
+}
+
+.image-placeholder {
+  width: 100%;
+  height: clamp(160px, 20vw, 245px);
+  border: 1px solid #5b9bd5;
+  border-radius: 34px;
+  object-fit: cover;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.feature-card {
+  min-height: clamp(145px, 17vw, 205px);
+  display: grid;
+  place-items: center;
+  border: 1px solid #347dbd;
+  border-radius: 30px;
+  background: #5b9bd5;
+  color: #fff;
+  font-size: 22px;
+}
+
+.login-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 30;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: rgba(16, 33, 63, .55);
+}
+
+.login-overlay.hidden {
+  display: none !important;
+}
+
+.public-login-card {
+  position: relative;
+  width: min(100%, 440px);
+  border-radius: 16px;
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0 18px 60px rgba(16, 33, 63, .25);
+}
+
+.public-login-card h2 {
+  margin: 8px 0;
+  color: #10213f;
+}
+
+.public-login-card > p {
+  color: #718096;
+}
+
+.public-login-card label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin: 16px 0;
+  color: #42516a;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.public-login-card input {
+  width: 100%;
+  border: 1px solid #d9e1eb;
+  border-radius: 8px;
+  padding: 12px;
+  font: inherit;
+}
+
+.submit-login {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.close-login {
+  float: right;
+  border: 0;
+  background: transparent;
+  color: #718096;
+  cursor: pointer;
+}
+
+.link-button {
+  border: 0;
+  background: transparent;
+  color: #2864bd;
+  cursor: pointer;
+  margin-top: 14px;
+}
+
+@media (max-width: 850px) {
+  .landing-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-card {
+    min-height: 145px;
+  }
+}
+
+@media (max-width: 560px) {
+  .public-nav {
+    gap: 12px;
+    padding: 12px 16px;
+  }
+
+  .public-brand {
+    gap: 8px;
+    font-size: 14px;
+  }
+
+  .news-link {
+    display: none;
+  }
+
+  .public-login-button {
+    min-width: auto;
+    padding: 11px 14px;
+    font-size: 14px;
+  }
+
+  .landing-layout {
+    padding: 24px 18px;
+  }
+
+  .illustration-placeholders {
+    gap: 10px;
+  }
+
+  .image-placeholder {
+    height: 150px;
+    border-radius: 20px;
+  }
+
+  .feature-grid {
+    gap: 12px;
+  }
+
+  .feature-card {
+    min-height: 115px;
+    border-radius: 20px;
+    font-size: 17px;
+  }
+}

@@ -1,0 +1,78 @@
+<div id="loginView" class="public-page">
+  <div class="public-topline">
+    Hệ thống quản lý thực tập - Công nghệ thông tin TP. Hồ Chí Minh
+  </div>
+
+  <header class="public-nav">
+    <a class="public-brand" href="#">
+      <span>EDU-06</span>
+      <span class="public-brand-name">
+        Cổng quản lý thực tập<br>và đánh giá doanh nghiệp
+      </span>
+    </a>
+
+    <a class="news-link" href="#tin-tuc">Tin tức</a>
+    <button id="loginButton" type="button" class="public-login-button">Đăng nhập</button>
+  </header>
+
+  <main class="landing-layout">
+    <section class="landing-intro">
+      <span class="hero-label">Thực thi hệ thống quản lý</span>
+      <h1>Hệ thống Quản lý Thực tập và Đánh giá Doanh nghiệp</h1>
+      <p>
+        Nền tảng số hóa giúp kết nối Sinh viên, Nhà trường và Doanh nghiệp.
+      </p>
+      <p>
+        Hỗ trợ nộp hồ sơ, theo dõi tiến độ thực tập và ghi nhận phản hồi,
+        đánh giá hai chiều minh bạch.
+      </p>
+
+      <div class="illustration-placeholders">
+        <img class="image-placeholder"
+             src="/images/thuctap1.jpg"
+             alt="Sinh viên tham gia thực tập">
+
+        <img class="image-placeholder"
+             src="/images/thuctap2.jpg"
+             alt="Hoạt động thực tập tại doanh nghiệp">
+      </div>
+    </section>
+
+    <section class="feature-grid" aria-label="Tính năng hệ thống">
+      <div class="feature-card">Quản lý</div>
+      <div class="feature-card">Báo cáo</div>
+      <div class="feature-card">Giám sát</div>
+      <div class="feature-card">Đánh giá</div>
+    </section>
+  </main>
+
+  <div id="loginPanel" class="login-overlay hidden">
+    <section class="public-login-card">
+      <button id="closeLogin" class="close-login" type="button">Đóng ✕</button>
+      <h2>Đăng nhập hệ thống</h2>
+      <p>Nhập tài khoản để tiếp tục.</p>
+
+      <form id="loginForm">
+        <label>
+          Tên đăng nhập
+          <input id="loginName" name="TenDangNhap"
+                 autocomplete="username" required>
+        </label>
+        <label>
+          Mật khẩu
+          <input id="loginPassword" name="MatKhauHash"
+                 type="password" autocomplete="current-password" required>
+        </label>
+
+        <div id="loginMessage" class="form-message" role="alert"></div>
+        <button type="submit" class="public-login-button submit-login">
+          Đăng nhập
+        </button>
+        <button id="registerButton" class="link-button" type="button">
+          Chưa có tài khoản? Đăng ký
+        </button>
+      </form>
+    </section>
+  </div>
+</div>
+
